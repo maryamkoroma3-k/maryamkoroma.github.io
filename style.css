@@ -1,0 +1,28 @@
+
+:root {
+  --bg: #f7f9fb;
+  --accent: #FFB6C1;
+  --text: #000000;
+}
+
+* { box-sizing: border-box; }
+html,body { height: 100%; margin: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: var(--text); background: var(--bg); }
+
+.wrap { max-width: 900px; margin: 0 auto; padding: 1rem; }
+
+.site-header { background: var(--accent); color: white; padding: 2rem 0; text-align: center; }
+.site-header nav a { color: rgba(255,255,255,0.9); margin: 0 0.5rem; text-decoration: none; }
+
+h1 { margin: 0 0 0.25rem 0; font-size: 2rem; }
+.tagline { margin: 0; opacity: 0.95; }
+
+.project { background: #FFB6C1; padding: 1rem; margin: 1rem 0; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.project img { width: 100%; height: auto; border-radius: 6px; display: block; margin: 0.5rem 0; }
+
+.site-footer { text-align: center; padding: 1rem 0; margin-top: 2rem; background: #f1f1f1; }
+.links a { margin-right: 0.75rem; color: var(--accent); text-decoration: none; }
+
+@media (min-width: 700px) {
+  .project { display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; align-items: start; }
+  .project img { width: 100%; height: auto; }
+}
